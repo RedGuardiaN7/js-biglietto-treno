@@ -1,47 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Biglietto treno</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-  <body>
 
-    <div class="container text-center ">
-      
-      <h1 class="display-4 mb-3">Generatore prezzi del biglietto del treno</h1>
-      <div class="row justify-content-center m-0">
-      <div class="card col-10 text-start p-0">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biglietto treno</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container text-center ">
+
+    <h1 class="display-4 mb-3">Generatore prezzi del biglietto del treno</h1>
+    <div class="row justify-content-center m-0">
+      <div class="card col-11 text-start p-0">
         <div class="card-header bg-primary text-white">
           <h3 class="fw-bolder">Biglietto del treno</h3>
         </div>
         <div class="row">
-        <div class="col-3 mb-3">
 
-          <label for="formFirstNameInput" class="form-label">Nome</label>
-          <input type="text" class="form-control form-control-lg" id="formFirstNameInput"
-              placeholder="Type your first name here...">
+          <div class="col-3 my-3 ms-5">
+
+            <label for="formFirstNameInput" class="form-label fw-bold fs-5">NOME</label>
+            <input type="text" class="form-control form-control-lg" id="formFirstNameInput"
+              placeholder="Scriva qui il suo nome...">
+          </div>
+
+          <div class="col-4 my-3 ms-2">
+
+            <label for="formLastNameInput" class="form-label fw-bold fs-5">COGNOME</label>
+            <input type="text" class="form-control form-control-lg" id="formLastNameInput"
+              placeholder="Scriva qui il suo cognome...">
+          </div>
+
+          <div class="col-2 my-3 ms-2">
+
+            <label class="form-label fw-bold fs-5">TARIFFA</label>
+            <select class="form-select form-select-lg" aria-label=".form-fare-select">
+              <option selected disabled>Selezioni la sua tariffa...</option>
+              <option value="1">Standard</option>
+              <option value="2">Young (minori di 18 anni)</option>
+              <option value="3">Senior (over 65)</option>
+            </select>
+
+          </div>
+
+          <div class="col-2">
+            <img src="https://codiceabarra.it/wp-content/uploads/sites/128/2013/11/SSCC-Pallet-Barcode.jpg"
+              alt="Barcode">
+          </div>
+
+          <div class="col-3 my-3 ms-5">
+
+            <label for="formDateInput" class="form-label fw-bold fs-5">DATA</label>
+            <input type="text" class="form-control form-control-lg" id="formDateInput" placeholder="Selezioni la data...">
+          </div>
+
+          <div class="col-4 my-3 ms-2">
+
+            <label for="formDistanceInput" class="form-label fw-bold fs-5">KM TRAGITTO</label>
+            <div class="input-group">
+              <input type="text" class="form-control form-control-lg text-end" id="formDistanceInput"
+                placeholder="Quanti chilometri intende percorrere?">
+              <div class="input-group-text">km</div>
+            </div>
+          </div>
+
+          <div class="col-2 my-3 ms-2">
+
+            <label for="formTicketNumberInput" class="form-label fw-bold fs-5">NUMERO</label>
+            <input type="text" class="form-control form-control-lg" id="formTicketNumberInput">
+          </div>
+
+          <div class="col-3 my-3 ms-5"></div>
+
+          <div class="col-4 my-3 ms-2 text-center">
+
+            <button type="button" class="btn btn-info fw-bold fs-5">Calcola il tuo prezzo</button>
+
+          </div>
+
+          <div class="col-2 my-3 ms-2">
+
+            <p class="fw-bold fs-5">PREZZO: 20 €</p>
+
+          </div>
+
+          <div class="col-10 my-3 mb-5"></div>
+
         </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      </div>
-      </div>
-      </div>
+
+        <div class="card-footer bg-danger pb-3"></div>
+
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
-  </body>
+</body>
+
 </html>
