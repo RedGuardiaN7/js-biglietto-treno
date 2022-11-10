@@ -1,20 +1,19 @@
 let distance = prompt("Quanti chilometri intende percorrere?");
-let distanceNaN = isNaN(distance);
 
 // --- Questo viene fatto nel caso in cui l'utente imetta i chilometri con la virgola --- //
-let right_distance = distance.replace(",", ".")
+let right_distance = distance.replace(",", ".");
 
-console.log(right_distance)
+let distanceNaN = isNaN(right_distance);
 
 if (distanceNaN || right_distance <= 0) {
-    console.log("Per favore, imettere un numero valido di chilometri.")
+    console.error("Per favore, imettere un numero valido di chilometri.")
 };
 
 let age = prompt("Indichi la sua età");
 let ageNaN = isNaN(age);
 
 if (ageNaN || age <= 0) {
-    console.log("Per favore, imettere un'età vailda.")
+    console.error("Per favore, imettere un'età vailda.")
 };
 
 let first_price = right_distance * 0.21;
@@ -31,7 +30,7 @@ let final_price_decimal = final_price.toFixed(2);
 
 console.log(
     `
-    ------------------------------------Prezzo finale del biglieto------------------------------------
+    ------------------------------------Prezzo finale del biglieto-------------------------------------
 
     Il prezzo finale del vostro biglieto (applcando eventuali sconti) risulta: ${final_price_decimal} € 
 
