@@ -1,4 +1,4 @@
-let distance = prompt("Quanti chilometri intende percorrere?");
+/*let distance = prompt("Quanti chilometri intende percorrere?");
 
 // --- Questo viene fatto nel caso in cui l'utente imetta i chilometri con la virgola --- //
 let right_distance = distance.replace(",", ".");
@@ -38,3 +38,5 @@ console.log(
 
     `
 );
+
+*/
